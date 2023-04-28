@@ -1,7 +1,6 @@
 import { Box, Container, Flex, Text } from '@mantine/core';
 import { IconArrowBack } from '@tabler/icons';
 import ProgressBar from 'components/Onboarding/ProgressBar';
-import LazyLoad from 'react-lazyload';
 import Head from 'next/head';
 import Link from 'next/link';
 import React from 'react';
@@ -42,37 +41,31 @@ const OnboardingPage = () => {
         <Container size={'md'}>
           <Box component="section">
             {pageStage === 1 && (
-              <LazyLoad once>
-                <div>
-                  <UserAccountInfo
-                    pageTitle={'User Form:'}
-                    submitButtonText={'Next'}
-                    previousButton={false}
-                  />
-                </div>
-              </LazyLoad>
+              <div>
+                <UserAccountInfo
+                  pageTitle={'User Form:'}
+                  submitButtonText={'Next'}
+                  previousButton={false}
+                />
+              </div>
             )}
             {pageStage === 2 && (
-              <LazyLoad once>
-                <div>
-                  <UserPrivacyInfo
-                    pageTitle={'Privacy Form:'}
-                    submitButtonText={'Next'}
-                    previousButton={true}
-                  />
-                </div>
-              </LazyLoad>
+              <div>
+                <UserPrivacyInfo
+                  pageTitle={'Privacy Form:'}
+                  submitButtonText={'Next'}
+                  previousButton={true}
+                />
+              </div>
             )}
             {pageStage === 3 && (
-              <LazyLoad once>
-                <div>
-                  <ReviewUserData
-                    pageTitle={'Review Form:'}
-                    submitButtonText={'Submit'}
-                    previousButton={true}
-                  />
-                </div>
-              </LazyLoad>
+              <div>
+                <ReviewUserData
+                  pageTitle={'Review Form:'}
+                  submitButtonText={'Submit'}
+                  previousButton={true}
+                />
+              </div>
             )}
           </Box>
         </Container>
