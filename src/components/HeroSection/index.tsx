@@ -50,9 +50,6 @@ const HeroSection = () => {
       </Grid.Col>
       <Grid.Col md={6}>
         <Image
-          data-aos="fade-left"
-          data-aos-offset="400"
-          data-aos-easing="ease-in-sine"
           src={
             'https://preview.colorlib.com/theme/seos/assets/img/hero/hero_right.png.webp'
           }
