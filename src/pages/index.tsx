@@ -18,7 +18,7 @@ export default function Home() {
     <Container size="xl">
       <Head>
         <title>Julieth AI</title>
-        <meta name="description" content="Plateumed Web Client" />
+        <meta name="description" content="Juliet AI" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Flex py={20} align={'center'} justify={'space-between'}>

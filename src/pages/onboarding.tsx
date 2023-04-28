@@ -24,19 +24,28 @@ const OnboardingPage = () => {
         <title>Julieth AI | onboarding</title>
       </Head>
       <Container size={'xl'}>
-        <Flex py={20} align={'center'} columnGap={25}>
-          <Link href={'/'}>
-            <IconArrowBack />
-          </Link>
-          <Box component="article">
-            <Text fz={18} fw={500} lh={'1.5'}>
-              Welcome!
-            </Text>
-            <Text fz={18} fw={300}>
-              Register to get started
-            </Text>
-          </Box>
+        <Flex justify={'space-between'} align={'center'}>
+          <Flex py={20} columnGap={25} align={'center'}>
+            <Link href={'/'}>
+              <IconArrowBack />
+            </Link>
+            <Box component="article">
+              <Text fz={18} fw={500} lh={'1.5'}>
+                Welcome!
+              </Text>
+              <Text fz={18} fw={300}>
+                Register to get started
+              </Text>
+            </Box>
+          </Flex>
+          <Text
+            sx={{ fontSize: 25, fontWeight: 600, fontStyle: 'italic' }}
+            color="#93278F"
+          >
+            JA
+          </Text>
         </Flex>
+
         <ProgressBar progressPercent={getProgress(pageStage)} />
         <Container size={'md'}>
           <Box component="section">
