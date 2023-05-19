@@ -2,11 +2,8 @@
 import { Box, Button, Container, Flex } from '@mantine/core';
 import Head from 'next/head';
 import Image from 'next/image';
-import { IconSend } from '@tabler/icons';
 import { useMediaQuery } from '@mantine/hooks';
-import HeroSection from 'components/HeroSection';
 import { useRouter } from 'next/router';
-import Logo from '../../public/images/logo.svg';
 import KlashaDashboardWrapper from '@/components/layouts/KlashaDashboardWrapper';
 import LandingDashboard from '@/components/Dashboard/LandingDashboard';
 
