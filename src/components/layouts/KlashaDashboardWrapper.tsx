@@ -13,8 +13,6 @@ const Container = styled.div`
 `;
 
 const Content = styled.div<{ isOpened: boolean; mobileShow: boolean }>`
-  display: flex;
-  flex-direction: row;
   flex: 1;
   width: 100%;
   text-align: left;

@@ -295,9 +295,9 @@ const LandingDashboard = () => {
               </Flex>
             </Flex>
             <Box
-              px={40}
+              px={{ base: 15, md: 40 }}
               pb={12}
-              pt={30}
+              pt={{ base: 15, md: 30 }}
               sx={{ border: '1px solid black', borderRadius: '8px' }}
               mt={4}
             >
@@ -312,7 +312,7 @@ const LandingDashboard = () => {
           <Grid.Col lg={3} mt={{ base: 0, md: 53 }}>
             <Box
               bg={'#EF2C5A'}
-              pr={88}
+              pr={{ base: 70, md: 83 }}
               pl={24}
               py={24}
               color="white"
