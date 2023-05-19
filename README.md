@@ -1,4 +1,4 @@
-# Juliet AI onboarding application
+# Klasha  application
 
 Project is built with [nextjs](https://nextjs.org/docs), with [redux](https://redux.js.org/api/api-reference) for state management and [mantine](https://mantine.dev/pages/basics/) as the component libary.
 
