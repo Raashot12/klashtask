@@ -17,7 +17,7 @@ const Wrapper = styled.div<{ bg: string }>`
 export const LoaderAnimation = () => {
   return (
     <Wrapper bg={'#fffff'}>
-      <Loader size="lg" variant="bars" color="#93278F" />
+      <Loader size="lg" variant="bars" color="#EF2C5A" />
     </Wrapper>
   );
 };

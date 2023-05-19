@@ -30,54 +30,13 @@
     url('fonts/general-sans/GeneralSans-Bold.woff') format('woff');
 }
 
-@font-face {
-  font-family: 'Gilroy';
-  src: url('/fonts/gilroy/Gilroy-Regular.woff') format('truetype');
-  font-style: 'normal';
-  font-weight: 400;
-  font-display: 'swap';
-}
 
-@font-face {
-  font-family: 'Gilroy';
-  src: url('/fonts/gilroy/Gilroy-Medium.woff') format('truetype');
-  font-style: 'normal';
-  font-weight: 500;
-  font-display: 'swap';
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('/fonts/gilroy/Gilroy-Semibold.woff') format('truetype');
-  font-style: 'normal';
-  font-weight: 600;
-  font-display: 'swap';
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('/fonts/gilroy/Gilroy-Bold.woff') format('truetype');
-  font-style: 'normal';
-  font-weight: 700;
-  font-display: 'swap';
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('/fonts/gilroy/Gilroy-Black.woff') format('truetype');
-  font-style: 'normal';
-  font-weight: 800;
-  font-display: 'swap';
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('/fonts/gilroy/Gilroy-Heavy.woff') format('truetype');
-  font-style: 'normal';
-  font-weight: 900;
-  font-display: 'swap';
-}
 .mantine-InputWrapper-error{
   color: red;
 }
 
+.recharts-text{
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #0A0A0A !important;
+}

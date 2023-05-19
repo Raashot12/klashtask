@@ -4,9 +4,9 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "Julieth AI",
-  "short_name": "JuliethAI",
-  "description": "Revolutionarizing Africa with AI",
+  "name": "Klasha",
+  "short_name": "Klasha",
+  "description": "Klasha Business helps international and African businesses manage African currency payables and receivables in one account.",
   "icons": [
     {
       "src": "/icon-192x192.png",

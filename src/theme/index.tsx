@@ -1,5 +1,4 @@
-export const defaultFonts =
-  'Gilroy, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif';
+export const defaultFonts = 'General Sans';
 
 export const inputStyles = {
   input: {

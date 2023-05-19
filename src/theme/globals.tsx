@@ -6,8 +6,8 @@ const GlobalFonts = () => {
       styles={[
         {
           '@font-face': {
-            fontFamily: 'Gilroy',
-            src: `url(../fonts/gilroy/Gilroy-Regular.tff format("truetype")`,
+            fontFamily: 'General Sans',
+            src: `url('/fonts/general-sans/GeneralSans-Regular.woff') format("truetype")`,
             fontStyle: 'normal',
             fontWeight: 400,
             fontDisplay: 'swap',
@@ -15,8 +15,8 @@ const GlobalFonts = () => {
         },
         {
           '@font-face': {
-            fontFamily: 'Gilroy',
-            src: `url('/fonts/gilroy/Gilroy-Medium.tff') format("truetype")`,
+            fontFamily: 'General Sans',
+            src: `url('/fonts/general-sans/GeneralSans-Medium.woff') format("truetype")`,
             fontStyle: 'normal',
             fontWeight: 500,
             fontDisplay: 'swap',
@@ -24,37 +24,10 @@ const GlobalFonts = () => {
         },
         {
           '@font-face': {
-            fontFamily: 'Gilroy',
-            src: `url('/fonts/gilroy/Gilroy-Semibold.tff') format("truetype")`,
+            fontFamily: 'General Sans',
+            src: `url('/fonts/general-sans/GeneralSans-Bold.woff') format("truetype")`,
             fontStyle: 'normal',
             fontWeight: 600,
-            fontDisplay: 'swap',
-          },
-        },
-        {
-          '@font-face': {
-            fontFamily: 'Gilroy',
-            src: `url('/fonts/gilroy/Gilroy-Bold.tff') format("truetype")`,
-            fontStyle: 'normal',
-            fontWeight: 700,
-            fontDisplay: 'swap',
-          },
-        },
-        {
-          '@font-face': {
-            fontFamily: 'Gilroy',
-            src: `url('/fonts/gilroy/Gilroy-Black.tff') format("truetype")`,
-            fontStyle: 'normal',
-            fontWeight: 800,
-            fontDisplay: 'swap',
-          },
-        },
-        {
-          '@font-face': {
-            fontFamily: 'Gilroy',
-            src: `url('/fonts/gilroy/Gilroy-Heavy.tff') format("truetype")`,
-            fontStyle: 'normal',
-            fontWeight: 900,
             fontDisplay: 'swap',
           },
         },
