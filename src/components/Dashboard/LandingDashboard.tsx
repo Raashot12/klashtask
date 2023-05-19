@@ -75,7 +75,7 @@ const LandingDashboard = () => {
           Sales overview
         </Text>
         <Grid mt={24}>
-          <Grid.Col lg={3}>
+          <Grid.Col sm={6} md={4} lg={3}>
             <Box
               px={24}
               py={25}
@@ -93,7 +93,7 @@ const LandingDashboard = () => {
               </Text>
             </Box>
           </Grid.Col>
-          <Grid.Col lg={3}>
+          <Grid.Col sm={6} md={4} lg={3}>
             <Box
               px={24}
               py={25}
@@ -133,7 +133,7 @@ const LandingDashboard = () => {
               </Text>
             </Box>
           </Grid.Col>
-          <Grid.Col lg={3}>
+          <Grid.Col sm={6} md={4} lg={3}>
             <Box
               px={24}
               py={25}
@@ -174,7 +174,7 @@ const LandingDashboard = () => {
               </Text>
             </Box>
           </Grid.Col>
-          <Grid.Col lg={3}>
+          <Grid.Col md={4} lg={3}>
             <Box
               px={24}
               py={25}
@@ -216,12 +216,13 @@ const LandingDashboard = () => {
             </Box>
           </Grid.Col>
         </Grid>
-        <Grid mt={50}>
+        <Grid mt={{ sm: 0, md: 50 }}>
           <Grid.Col lg={9}>
             <Flex
               align={'center'}
               wrap={{ base: 'wrap', lg: 'nowrap' }}
               rowGap={10}
+              display={{ base: 'none !important', md: 'flex !important' }}
             >
               <Flex align={'center'} columnGap={12} mr={24}>
                 <Text color="#0A0A0A" fw={500} fz={20}>
@@ -257,7 +258,12 @@ const LandingDashboard = () => {
                 </Flex>
               </Flex>
 
-              <Flex sx={{ flex: 1 }} columnGap={16} rowGap={16}>
+              <Flex
+                sx={{ flex: 1 }}
+                columnGap={16}
+                rowGap={16}
+                display={{ base: 'none', lg: 'flex' }}
+              >
                 <Select
                   data={[
                     'rasheediskilu.dev@gmail.com',
@@ -303,7 +309,7 @@ const LandingDashboard = () => {
               />
             </Box>
           </Grid.Col>
-          <Grid.Col lg={3} mt={53}>
+          <Grid.Col lg={3} mt={{ base: 0, md: 53 }}>
             <Box
               bg={'#EF2C5A'}
               pr={88}
