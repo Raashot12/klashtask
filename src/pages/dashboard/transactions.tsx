@@ -11,7 +11,7 @@ const TransactionPage = () => {
         <title>Klasha | Transactions</title>
         <meta name="description" content="Klasha dashboard" />
       </Head>
-      <Box mt={{ base: 88, sm: 168 }} fw={600}>
+      <Box mt={{ base: 88, md: 168 }} fw={600}>
         <TransactionDashboard />
       </Box>
     </KlashaDashboardWrapper>

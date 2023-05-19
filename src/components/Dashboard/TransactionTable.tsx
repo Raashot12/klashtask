@@ -11,6 +11,7 @@ const Table = styled.table`
   overflow-y: hidden;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+
   thead {
     width: 100%;
     text-align: left;
@@ -58,7 +59,26 @@ const Table = styled.table`
     padding: 12px 12px;
   }
 `;
-const Wrapper = styled(Box as any)``;
+const Wrapper = styled.div`
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #a5aaad;
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #0a0a0a;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ef2c5a;
+  }
+`;
 
 const TransactionTable = () => {
   const { slicedData, pagination, prevPage, nextPage, changePage } =
@@ -69,12 +89,12 @@ const TransactionTable = () => {
     });
   return (
     <>
-      <Wrapper
+      <Box
         sx={{ margin: '0 auto', width: '100%' }}
         p={16}
         className="container"
       >
-        <div id="table" style={{ overflowX: 'auto' }}>
+        <Wrapper id="table" style={{ overflowX: 'auto' }}>
           <Table cellPadding="5" cellSpacing="4">
             <thead>
               <tr>
@@ -101,7 +121,7 @@ const TransactionTable = () => {
               })}
             </>
           </Table>
-        </div>
+        </Wrapper>
         <Flex mt={16} justify={'flex-end'}>
           <Pagination
             idToClampTo="table"
@@ -111,7 +131,7 @@ const TransactionTable = () => {
             changePage={changePage}
           />
         </Flex>
-      </Wrapper>
+      </Box>
     </>
   );
 };

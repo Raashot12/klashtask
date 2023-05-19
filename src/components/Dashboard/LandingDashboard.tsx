@@ -70,7 +70,7 @@ const data = [
 const LandingDashboard = () => {
   return (
     <>
-      <Box mt={{ base: 88, sm: 168 }} mb={20}>
+      <Box mt={{ base: 88, md: 168 }} mb={20}>
         <Text fz={20} fw={500} color="#1A1A1A" sx={{ textAlign: 'left' }}>
           Sales overview
         </Text>
@@ -174,7 +174,7 @@ const LandingDashboard = () => {
               </Text>
             </Box>
           </Grid.Col>
-          <Grid.Col md={4} lg={3}>
+          <Grid.Col sm={6} md={4} lg={3}>
             <Box
               px={24}
               py={25}

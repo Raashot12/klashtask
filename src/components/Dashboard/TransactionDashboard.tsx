@@ -12,12 +12,24 @@ const TransactionDashboard = () => {
         Transaction history
       </Text>
       <Divider orientation="horizontal" color="#F0F0F0" mt={24} />
-      <Flex pl={14} pr={14} mt={8} justify={'space-between'}>
+      <Flex
+        pl={14}
+        pr={14}
+        mt={8}
+        justify={'space-between'}
+        wrap={{ base: 'wrap', sm: 'nowrap' }}
+        rowGap={20}
+      >
         <TextInput
           placeholder="Search"
           sx={{
             '.mantine-Input-input': {
               height: 40,
+            },
+            '@media (max-width: 576px)': {
+              '&.mantine-InputWrapper-root': {
+                width: '100%',
+              },
             },
           }}
           rightSection={<IconSearch height={16} width={16} />}
